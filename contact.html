@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Neem contact op met Rik Postma — Software Developer."/>
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Contact — Rik Postma"/>
+  <meta property="og:description" content="Neem contact op met Rik Postma — Software Developer uit Leeuwarden."/>
+  <meta property="og:url" content="https://reaperswag42021.github.io/contact.html"/>
+  <meta property="og:site_name" content="Rik Postma"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Contact — Rik Postma"/>
+  <meta name="twitter:description" content="Neem contact op met Rik Postma — Software Developer uit Leeuwarden."/>
+  <link rel="canonical" href="https://reaperswag42021.github.io/contact.html"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <title>Contact — Rik Postma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── NAVIGATIE ── -->
+  <nav>
+    <a href="index.html" class="nav-logo">Rik<span>.</span>Postma</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Over mij</a></li>
+      <li><a href="work.html">Werk</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu openen">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <div class="nav-drawer" id="navDrawer">
+    <a href="index.html">Home</a>
+    <a href="about.html">Over mij</a>
+    <a href="work.html">Werk</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ── PAGE HERO ── -->
+  <div class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <div class="section-label">Contact</div>
+      <h1>Laten we een<br><em>gesprek</em> beginnen</h1>
+      <p>Of je nu een projectbriefing hebt of gewoon hallo wilt zeggen — mijn inbox staat altijd open.</p>
+    </div>
+  </div>
+
+  <!-- ── CONTACT FORM + INFO ── -->
+  <section class="section">
+    <div class="contact-grid">
+
+      <!-- Form -->
+      <div class="reveal">
+        <div class="section-label">Stuur een bericht</div>
+        <h2 style="margin-bottom:2rem;">Stuur me<br>een <em>bericht</em></h2>
+        <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <!-- Web3Forms: vervang onderstaande key door je eigen access key van web3forms.com -->
+          <input type="hidden" name="access_key" value="69ace04a-af6d-4a00-b152-d6491adad450">
+          <input type="hidden" name="subject" value="Nieuw bericht via portfolio">
+          <input type="hidden" name="from_name" value="Portfolio Rik Postma">
+          <!-- Honeypot tegen spam -->
+          <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
+
+          <div class="form-group">
+            <label for="name">Jouw naam</label>
+            <input type="text" id="name" name="name" placeholder="Jan de Vries" maxlength="60" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mailadres</label>
+            <input type="email" id="email" name="email" placeholder="jan@voorbeeld.nl" maxlength="100" required>
+          </div>
+          <div class="form-group">
+            <label for="subject_field">Onderwerp</label>
+            <input type="text" id="subject_field" name="onderwerp" placeholder="Projectaanvraag / even hallo zeggen" maxlength="100">
+          </div>
+          <div class="form-group">
+            <label for="message">Bericht</label>
+            <textarea id="message" name="message" rows="6" placeholder="Vertel iets over je project, planning en budget..." maxlength="1500" required></textarea>
+            <span id="charCount" style="font-size:0.72rem; color:var(--muted); align-self:flex-end;">0 / 1500</span>
+          </div>
+          <button type="submit" class="btn btn-primary" style="align-self:flex-start; margin-top:0.5rem;">
+            Verstuur bericht →
+          </button>
+          <p id="formStatus" style="font-size:0.85rem; margin-top:0.5rem;"></p>
+        </form>
+      </div>
+
+      <!-- Contact info -->
+      <div class="contact-info reveal">
+        <div>
+          <div class="section-label">Direct contact</div>
+          <h2 style="margin-bottom:2rem;">Andere manieren<br>om me te <em>bereiken</em></h2>
+        </div>
+
+        <div class="contact-info-item">
+          <h3>E-mail</h3>
+          <a href="mailto:rik8postma@gmail.com">rik8postma@gmail.com</a>
+        </div>
+
+        <div class="contact-info-item">
+          <h3>Telefoon</h3>
+          <a href="tel:+31618835309">+31 6 18835309</a>
+        </div>
+
+        <div class="contact-info-item">
+          <h3>Gevestigd in</h3>
+          <p>Leeuwarden, Nederland</p>
+        </div>
+
+        <div class="contact-info-item">
+          <h3>Beschikbaarheid</h3>
+          <p>Momenteel beschikbaar voor stage- en projectwerk. Reactietijd doorgaans binnen 24 uur.</p>
+        </div>
+
+        <div class="contact-info-item">
+          <h3>Op het web</h3>
+          <div class="social-row" style="justify-content:flex-start; margin-top:0.8rem; flex-wrap:wrap;">
+            <a href="https://www.linkedin.com/in/rik-postma-0938333a7/" class="social-link" target="_blank" rel="noopener noreferrer">↗ LinkedIn</a>
+            <a href="https://github.com/ReaperSwag42021" class="social-link" target="_blank" rel="noopener noreferrer">↗ GitHub</a>
+            <a href="CV_Rik_Postma.pdf" class="social-link" target="_blank" rel="noopener noreferrer">↗ CV</a>
+          </div>
+        </div>
+
+        <!-- Decorative availability badge -->
+        <div style="display:inline-flex; align-items:center; gap:0.7rem; padding:0.8rem 1.4rem; border:1px solid rgba(200,244,92,0.25); border-radius:100px; margin-top:0.5rem;">
+          <span style="width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent);animation:pulse 2s ease-in-out infinite;flex-shrink:0;"></span>
+          <span style="font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);">Open voor werk</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FAQ ── -->
+  <section class="section" style="background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+    <div class="reveal" style="max-width:780px; margin:0 auto;">
+      <div class="section-label">FAQ</div>
+      <h2>Veelgestelde <em>vragen</em></h2>
+      <div style="margin-top:3rem; display:flex; flex-direction:column; gap:1.5rem;">
+
+        <div style="padding:1.8rem; background:var(--surface2); border:1px solid var(--border); border-radius:var(--radius);">
+          <h3 style="margin-bottom:0.7rem; font-size:1rem;">Wat voor projecten doe je?</h3>
+          <p style="color:var(--muted); font-size:0.88rem; line-height:1.8;">Ik werk graag aan frontend development, full-stack web apps, design systems en UI/UX. Ik kom graag in elke fase van een project binnen — van strategie tot lancering.</p>
+        </div>
+
+        <div style="padding:1.8rem; background:var(--surface2); border:1px solid var(--border); border-radius:var(--radius);">
+          <h3 style="margin-bottom:0.7rem; font-size:1rem;">Wat is je gebruikelijke planning?</h3>
+          <p style="color:var(--muted); font-size:0.88rem; line-height:1.8;">Dat hangt af van de omvang. Een landing page duurt 2–3 weken; een volledig product met ontwerp en ontwikkeling kan 3–6 maanden duren. Tijdens onze eerste call geef ik een duidelijke planning.</p>
+        </div>
+
+        <div style="padding:1.8rem; background:var(--surface2); border:1px solid var(--border); border-radius:var(--radius);">
+          <h3 style="margin-bottom:0.7rem; font-size:1rem;">Werk je op afstand?</h3>
+          <p style="color:var(--muted); font-size:0.88rem; line-height:1.8;">Ja, volledig remote. Ik werk samen met opdrachtgevers door heel Nederland en daarbuiten. Ik gebruik Figma, Linear, Slack en Notion om samenwerking soepel te laten verlopen, ongeacht tijdzone.</p>
+        </div>
+
+        <div style="padding:1.8rem; background:var(--surface2); border:1px solid var(--border); border-radius:var(--radius);">
+          <h3 style="margin-bottom:0.7rem; font-size:1rem;">Sta je open voor stages of vaste rollen?</h3>
+          <p style="color:var(--muted); font-size:0.88rem; line-height:1.8;">Ik sta open voor de juiste kans. Bouw je aan iets interessants en zoek je een gemotiveerde software developer in opleiding voor je team? Laten we praten.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-logo">Rik<span>.</span>Postma</div>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/rik-postma-0938333a7/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/ReaperSwag42021" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="CV_Rik_Postma.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+    </div>
+    <p>© 2026 Rik Postma. Alle rechten voorbehouden.</p>
+    <p>Leeuwarden, NL</p>
+  </footer>
+
+  <style>
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 6px var(--accent); }
+      50%       { box-shadow: 0 0 14px var(--accent); }
+    }
+  </style>
+
+  <script src="main.js"></script>
+</body>
+</html>
